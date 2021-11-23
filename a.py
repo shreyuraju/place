@@ -10,3 +10,7 @@ str=''
 for i in l:
 	str+=i
 print(str)
+
+
+
+
