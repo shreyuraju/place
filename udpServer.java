@@ -16,7 +16,7 @@ public class udpServer {
 			InetAddress ip=recvpack.getAddress();
 			int port=recvpack.getPort();
 			System.out.println("Enter reply to Client:");
-			String reply=sc.next();
+			String reply=sc.nextLine();
 			send=reply.getBytes();
 			DatagramPacket sendpacket = new DatagramPacket(send,send.length,ip,port);
 			ds.send(sendpacket);
