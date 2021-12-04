@@ -7,7 +7,7 @@ public class udpClient {
 		byte[] send=new byte[1024];
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Message to server:");
-		String sendmsg=sc.next();
+		String sendmsg=sc.nextLine();
 		send=sendmsg.getBytes();
 		InetAddress ip=InetAddress.getByName("localhost");
 		DatagramPacket senddp=new DatagramPacket(send,send.length,ip,8000);
