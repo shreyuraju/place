@@ -158,3 +158,28 @@ void main() {
         printf("\n");
     }
 }
+
+print("Enter 1st sentence")
+s1=input()
+print('enter 2nd sentence')
+s2=input()
+l1=s1.split(' ')
+l2=s2.split(' ')
+print(l1)
+print(l2)
+com=[]
+ncom=[]
+for i in l1:
+  if i in l2:
+    if i not in com:
+      com.append(i)
+  else:
+    ncom.append(i)
+for j in l2:
+  if j in l1:
+    if j not in com:
+      com.append(j)
+  else:
+    ncom.append(j)
+print(com)
+print(ncom)
