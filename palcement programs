@@ -148,7 +148,7 @@ void main() {
         scanf("%d",&r);
     n=r*2-1;
     for(i=n;i!=0;i=i-2) {
-        for(j=0;j<=s;j++) {
+        for(j=0;j<s;j++) {
             printf(" ");
         }
         s++;
