@@ -162,10 +162,10 @@ void main() {
 	int m,n,max,min;
     scanf("%d",&m);
     scanf("%d",&n);
-    max=((m+n)+abs(m-n))/2);
-    min=((m+n)-abs(m-n))/2);
+    max=((m+n)+abs(m-n))/2;
+    min=((m+n)-abs(m-n))/2;
     printf("largest of %d & %d no.:%d",m,n,max);
-    printf("smallest of %d & %d no.:%d",m,n,min);
+    printf("\nsmallest of %d & %d no.:%d",m,n,min);
 }
 
 
