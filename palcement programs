@@ -140,3 +140,21 @@ void main() {
         printf("\n");
     }
 }
+
+#include <stdio.h>
+void main() {
+    int r,i,j,n,s=0,k;
+    printf("Enter row:");
+        scanf("%d",&r);
+    n=r*2-1;
+    for(i=n;i!=0;i=i-2) {
+        for(j=0;j<=s;j++) {
+            printf(" ");
+        }
+        s++;
+        for(k=0;k<i-1;k++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
