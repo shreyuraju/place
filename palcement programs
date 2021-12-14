@@ -360,3 +360,24 @@ int main()
     }
     return 0;
 }
+
+#include <stdio.h>
+int main()
+{
+    int a[50],key,n,i,j,t[50];
+    printf("enter n:");
+        scanf("%d",&n);
+    printf("Enter eles:\n");
+    for(i=1;i<n;i++) {
+        scanf("%d",&a[i]);
+    }
+    printf("Enter key:");
+        scanf("%d",&key);
+    for(i=0;i<n;i++) {
+        for(j=i+1;j<n;j++) {
+            if((a[i]+a[j]) == key)
+                printf("%d & %d\n",a[i],a[j]);
+        }
+    }
+    
+}
