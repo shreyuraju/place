@@ -329,3 +329,34 @@ int main()
     }
     return 0;
 }
+
+
+#include <stdio.h>
+int main()
+{
+    int a[50],n,i,j,ele,count=0,t[50];
+    printf("enter n:");
+        scanf("%d",&n);
+    printf("Enter eles:\n");
+    for(i=1;i<n;i++) {
+        scanf("%d",&a[i]);
+    }
+    for(i=1;i<n;i++) {
+        ele=a[i];
+        if(ele==t[count]) {
+            continue;
+        } 
+        for(j=i+1;j<n;j++) {
+            if (a[j]==ele) {
+                t[count++] = ele;
+                break;
+            }
+        }
+    }
+    printf("Count:%d\n", count);
+    printf("Repeat eles are:");
+    for(i=0;i<count;i++) {
+        printf("%d ",t[i]);
+    }
+    return 0;
+}
