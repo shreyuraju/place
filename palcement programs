@@ -381,3 +381,29 @@ int main()
     }
     
 }
+
+28/12/21
+
+// to display the largest difference from a given set of n no.
+#include<stdio.h>
+void main() {
+    int bg,sm,n,i,a[20],dif=0;
+    printf("Enter n:");
+    scanf("%d",&n);
+    printf("Enter %d elements:\n",n);
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+    bg=sm=a[0];
+    for(i=1;i<n;i++) {
+        if(a[i]>bg)
+            bg=a[i];
+        if(a[i]<sm)
+            sm=a[i];
+        if(dif<(bg-sm))
+            dif=(bg-sm);
+        printf("\ndiffernce %d",(bg-sm));
+        printf(" & its bettween %d & %d",bg,sm);
+    }
+    printf("\nlargest difference is %d",dif);
+}
+
