@@ -436,3 +436,19 @@ void main() {
         printf("\n");
     }
 }
+
+04/01/22
+addittion of 2 number without using operator
+
+#include <stdio.h>
+int add(int a, int b) {
+    return printf("%*c%*c",a,' ',b,' ');
+}
+int main() {
+    int a,b;
+    scanf("%d%d",&a,&b);
+    printf("sum=%d",add(a,b));
+    return 0;
+}
+
+print a number 1-100 without using loop
