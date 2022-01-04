@@ -461,3 +461,11 @@ int main() {
     }
     return 0;
 }
+
+//write running c code without main
+#include<stdio.h>
+#define run main
+int run() {
+    printf("This function with-out main");
+}
+
